@@ -1,0 +1,40 @@
+html, body {
+    margin: 0;
+}
+body {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    font-size: larger;
+    
+}
+
+.wrapper {
+    width: 1200px;
+    display: flex;
+    margin: 0 auto;
+    background-color: white;
+}
+.main {
+    display: flex;
+    flex-flow: column;
+    width: 85%;
+}
+.menu {
+    width: 15%;
+    background-color: rgb(7, 143, 102);
+    padding: 20px 40px 0px;
+}
+.header {
+    background-color: rgb(7, 224, 224);
+    min-height: 100px;
+}
+.content {
+    background-color: wheat;
+    min-height: 300px;
+    padding: 20px;
+}
+.footer {
+    background-color: rgb(8, 61, 58);
+    min-height: 150px;
+}

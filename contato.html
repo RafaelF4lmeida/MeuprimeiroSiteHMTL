@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template - Utilizar como modelo</title>
+    <link rel="stylesheet" href="base.css">
+    <style>
+        .row{
+            margin: 5px;
+        }
+        label{
+            width: 100px;
+            text-align: right;
+            display: inline-block;
+            padding-right: 5px;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="wrapper">
+        <div class="menu">
+          
+            <ul>
+                   
+                <li>
+                    <a href="./paginaprincipal.html" target="_self"><strong>Home</strong></a> 
+                </li>
+                <li>
+                    <a href="./sobreaclinica.html" target="_self"><strong>Sobre a Clínica</strong></a>
+                </li>
+                <li>
+                    <a href="./contato.html" target="_self"><strong>Contatos</strong></a>
+                </li>
+                <li>
+                    <a href="./horariodeatendimento.html" target="_self"><strong>Horario de Atendimento</strong></a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="main">
+            <div class="header">
+                <img src="./images/contatosclinica.png" width="1000">
+            </div>
+    
+            <div class="content">
+                <h1>Agende sua consulta agora pelo Whats-app</h1>
+                <h2>Telefones de contato</h2>
+                <ul>
+                    <!-- Numeros ficticios -->
+                    <li>
+                     (11)45825789
+                    </li>
+                    <li>
+                     Whats-app (11)98822-7187
+                    </li>
+                    <li>
+                     Endereço : Rua Botucatu, 862, Vila Clementino - São Paulo
+                    </li>
+
+                 
+                </ul>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1828.086147547707!2d-46.64514862396936!3d-23.598153038235225!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce71b144ae282d%3A0x915234ab89c84864!2sR.%20Botucatu%2C%20862%20-%20Vila%20Clementino%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2004023-062!5e0!3m2!1spt-BR!2sbr!4v1661833556943!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <h2>Agende tambem pelo Formulario abaixo:</h2>
+
+                <form method="get">
+                    <label>Nome</label><input type="text" name="name"><br>
+                    <label>E-mail</label><input type="email" name="email"><br>
+                    <label>Especialidade</label>
+                    <select name="role">
+                        <option value="">Selecione a especialidade</option>
+                        <option value="Clinicageral">Clínica Geral</option>
+                        <option value="Psicologia">Psicologia</option>
+                        <option value="Pediatria">Pediatria</option>
+                        <option value="Oftalmologia">Oftalmologia</option>
+                    </select><br>
+
+                    <label>Assunto:</label><input type="text" name="assunto"><br>
+
+                    <label>Mensagem:</label>
+                    <textarea rows="20" cols="50" name="mensagem"></textarea>
+                    
+                    <button type="submit" onclick="alert('Consulta agendada com sucesso')">Enviar</button>
+                    <button type="reset">Limpar</button>
+                </form>
+            </div>
+    
+            <div class="footer">
+               <img src="./images/logofotter.png" width="200">
+               <font color="white"><strong><blockquote>Todos os direitos reservados a clínica Pró+Vida</blockquote></strong></font>
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>
